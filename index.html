@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="img/icon.png">
-    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
     <title>Academia de Beleza - Girassol</title>
 
 </head>
@@ -13,7 +13,7 @@
     <!-- Cabeçalho -->
     <div class="Container Flex">
         <div id="logo">
-            <a href="index.html"><img src="img/logo.png" alt="Logotipo" href="index.html"></a>
+            <a href="index.html"><img src="img/logotop.png" alt="Logotipo" href="index.html"></a>
         </div>
     <nav>
             <!-- Menu retratil -->
@@ -21,11 +21,10 @@
         <input type="checkbox" name="menu" id="check">
         <label for="check">&#x268c;</label>
         <ul>
-            <div class="menu-item"><li><a href="#Sobre">Sobre</a></li></div>
+            <div class="menu-item"><li><a href="#Cursos">Cursos Profissionalizantes</a></li></div>
             <div class="menu-item"><li><a href="#LOCAL">Localização</a></li></div>
-            <div class="menu-item"><li><a href="https://hotmart.com/pt-br/marketplace/produtos?initialSelectedCategory=&q=Miguel+Iugas" target="_blank">Mentorias e Cursos</a></li></div>
-            <div class="menu-item"><li><a href="https://api.whatsapp.com/send?phone=5511933058210&text=Olá%21%20Eu%20gostaria%20de%20agendar%20um%20atendimento%20com%20Dr.%20Miguel%20Iugas%20%5B2652%5D" target="_blank">Agendamento</a></li></div>
-            <div class="menu-item"><li><a href="#Contato">Contato</a></li></div>
+            <div class="menu-item"><li><a href="#Sobre">Sobre a escola</a></li></div>
+            <div class="menu-item"><li><a href="#Contato">Fale Conosco</a></li></div>
         </ul>
         </div>
     </nav>
@@ -35,23 +34,30 @@
      <!-- Destaque -->
     <main>
         <div class="Container">
-            <a href="index.html"><img src="img/logo.png" alt="Academia de Beleza - Girassol" width="300px" height="150px" id="logobg"></a>
+            <a href="index.html"><img src="img/logob.png" alt="Academia de Beleza - Girassol" width="300px" height="150px" id="logobg"></a>
         </div>
     </main>
      <!-- Slider - Destaques -->
     <div class="hero-slider" carousel>
         <div class="carousel-cell" style="background-image: url(img/foto.jpg);">
             <div class="info-container">
-                <h3 class="header">Mentorias e Cursos</h3>
-                <h2 class="text">Aulas</h2>
-                <a href="https://hotmart.com/pt-br/marketplace/produtos?initialSelectedCategory=&q=Academia+Girassol" target="_blank"><button>Aprender Mais</button></a>
+                <h3 class="header">Curso de Manicure</h3>
+                <h2 class="text">Aulas Presenciais</h2>
+                <a href="#Cursos"><button>Inscrever-se!</button></a>
             </div>
         </div>
         <div class="carousel-cell" style="background-image: url(img/fundo.jpg);">
             <div class="info-container">
-                <h3 class="header">Agendamentos</h3>
-                <h2 class="text">Consultoria</h2>
-                <a href="https://api.whatsapp.com/send?phone=5511933058210&text=Olá%21%20Eu%20gostaria%20de%20agendar%20um%20atendimento%20com%20Dr.%20Miguel%20Iugas%20%5B2652%5D" target="_blank"><button >Agendamento Online</button></a>
+                <h3 class="header">Sobre nossa</h3>
+                <h2 class="text">Escola</h2>
+                <a href="#Sobre"><button >Conheça mais!</button></a>
+            </div>
+        </div>
+        <div class="carousel-cell" style="background-image: url(img/fundo.jpg);">
+            <div class="info-container">
+                <h3 class="header">Pré-Inscrições</h3>
+                <h2 class="text">Inscreva-se já</h2>
+                <a href="https://api.whatsapp.com/send?phone=5511933058210&text=Olá%21%20Eu%20gostaria%20de%20agendar%20um%20atendimento%20com%20Dr.%20Miguel%20Iugas%20%5B2652%5D" target="_blank"><button >Inscreva-se já!</button></a>
             </div>
         </div>
     </div>
@@ -71,6 +77,23 @@
             </div>
         </div>
     </section>
+    <section id="Cursos">   
+        <div class="Container">
+            <!-- <div class="foto" id="userpic">
+            </div>
+            <div class="content" id="animatedtxt"> -->
+                <div class="destaqueSobre1">
+                    <h1><strong>Curso de Manicure e Pedicure</strong></h1><br>
+                    <h3>Semi-presencial</h3><br>
+                    <div class="textoSobre1">
+                        <p>O curso de manicure da nossa academia oferece um conteúdo extenso com todos os detalhes para você começar sua carreira profissional na área.</p>
+                        <p>Contando com uma professora presencial, te ajudamos a alcançar a excelência da profissão.</p>
+                        <p>Com uma bagagem de mais de 20 anos, ela ja formou centenas de manicures e vai te ajudar no que for preciso para ser o profissional de sucesso que você almeja ser.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
     <!-- nullpoint -->
     <section id="null">
         <div class="nullpoint">
@@ -78,44 +101,50 @@
             <h3>Veja como chegar em nossa academia.</h3>
         </div>
     </section>
-    
+        <!--- LOCALIZAÇÃO -->
+        <section id="LOCAL">
+            <div class="localy">
+                <div class="map">
+                    <br>
+                    <div class="maptitle">
+                        <br><h3>Unidade Campinas</h3><br>
+                        <div class="mapframe">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.80588228712415!2d-47.13909829752078!3d-22.843406578635943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b91f8c592e15%3A0x9134d3d23298b319!2sEspa%C3%A7o%20Nobre%20Mirassol!5e0!3m2!1spt-BR!2sbr!4v1711383829225!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div><br>
+                        <h4>R. Irmão Robert Earl Hollingsworth - 08</h4>
+                        <h4>Jardim Mirassol</h4>
+                        <h4>Campinas/SP</h4>
+                        <h4>13069-502</h4><br>
+                    </div>
+                    <br>
+                </div>
+            </div>
+        </section>
 </body>
 <footer>
-    <!--- LOCALIZAÇÃO -->
-    <section id="LOCAL">
-        <div class="localy">
-            <div class="map">
-                <br>
-                <div class="maptitle">
-                    <br><h3>Unidade Campinas</h3><br>
-                    <div class="mapframe">
-                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d229.80588228712415!2d-47.13909829752078!3d-22.843406578635943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c8b91f8c592e15%3A0x9134d3d23298b319!2sEspa%C3%A7o%20Nobre%20Mirassol!5e0!3m2!1spt-BR!2sbr!4v1711383829225!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                    </div><br>
-                    <h4>R. Irmão Robert Earl Hollingsworth - 08</h4>
-                    <h4>Jardim Mirassol</h4>
-                    <h4>Campinas/SP</h4>
-                    <h4>13069-502</h4><br>
-                </div>
-                <br>
-            </div>
-        </div>
-    </section>
      <!-- CONTATOS -->
-     <section id="Contato1">
-        <div class="Container Flex2">
-            <div class="textoContato">
-                <a href="mailto:contato@academiagirassol.com.br?subject=SUPORTE"><img src="img/email.png" alt="Enviar e-mail">
-                <h3>contato@academiagirassol.com.br</h3></a><br><br>
-                <img src="img/fone.png" alt="Telefone"><h3>(19) 0800 0800</h3><br></a>
+        <section id="Contato1">
+            <div class="Container Flex2">
+                <div class="textoContato">
+                    <img src="img/fone.png" alt="Telefone"><h3>(19) 0800 0800</h3><br>
+                    <br>
+                    <section id="contact">
+                        <div class="contact">
+                        <section id="Contato">
+                            <div class="Container  Flex4">
+                                <a href="https://www.facebook.com/academiagirassol" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
+                                <a href="https://www.instagram.com/academiagirassol/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
+                            </div>
+                        </section>
+                        <br>
+                    <a href="mailto:contato@academiagirassol.com.br?subject=SUPORTE"><img src="img/email.png" alt="Enviar e-mail">
+                    <h3>contato@academiagirassol.com.br</h3></a><br><br>
+                </div>
             </div>
+        </section>
         </div>
     </section>
-    <section id="Contato">
-        <div class="Container  Flex4">
-            <a href="https://www.facebook.com/academiagirassol" target="_blank"><img src="img/facebook.png" alt="Facebook"></a>
-            <a href="https://www.instagram.com/academiagirassol/" target="_blank"><img src="img/instagram.png" alt="Instagram"></a>
-        </div>
-    </section>
+
     <!-- Final da pagina -->
     <section id="Creditos">
         <div class="Container">
@@ -123,6 +152,7 @@
         </div>
     </section>
 </footer>
+
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
     <a href="#Inicio" id="topo"><img src="img/topicon.png" alt="Para o inicio"></a>
 </html>
