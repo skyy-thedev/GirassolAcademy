@@ -1,5 +1,7 @@
 /* Google Fonts */
 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500&family=Open+Sans:wght@300;400&display=swap');
 @import url('https://fonts.cdnfonts.com/css/geo-sans-light');
@@ -55,7 +57,7 @@ body {
 }
 
 .hero-slider .carousel-cell .info-container .header{
-    font-family: 'Roboto Slab', sans-serif;
+    font-family: "Poppins", sans-serif;
     font-size: 30px;
     font-weight: 400;
     font-style: italic;
@@ -65,9 +67,11 @@ body {
 }
 
 .hero-slider .carousel-cell .info-container .text{
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
     font-size: 40px;
-    font-weight: bold;
+    /* font-weight: bold; */
     text-transform: uppercase;
     letter-spacing: 4px;
     margin-bottom: 32px;
@@ -79,7 +83,9 @@ body {
     border: 1px solid #fff;
     color: #fff;
     text-transform: uppercase;
-    font-family: 'Montserrat', sans-serif;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    font-style: normal;
     font-size: 12px;
     letter-spacing: 3px;
     border-radius: 12px;
@@ -327,11 +333,11 @@ main h2 {
 
 /* LOCALIZAÇÃO FAIXA AZUL  */
 #null {
-    background-color:  #f9ff45;
+    background-color:  #e97320;
     text-shadow: 1px 1px 0px black;
     font-family: 'Geosanslight', 'sans serif';
     padding: 10px 10px;
-    color: black;
+    color: rgb(255, 255, 255);
     width: cover;
     height: 95px;
     text-align: center;
@@ -663,7 +669,11 @@ footer {
         width: 390px;
     }
     .destaqueSobre {
-        font-size: 1.5em;
+        font-family: "GeosansLight", sans-serif;
+        font-size: 23px;
+        font-weight: 100;
+        font-style: italic;
+        text-align: center;
     }
     .destaqueSobre1 {
         font-family: "GeosansLight", sans-serif;
@@ -673,7 +683,7 @@ footer {
         font-size: 1.5em;
     }
     .textoSobre {
-        font-size: 1em;
+        font-size: 1.5em;
     }
     .textoSobre1 {
         margin-top: 50px;
@@ -733,8 +743,7 @@ footer {
         justify-content: space-between;
     }
     #Creditos {
-        margin-top: 120px;
-        margin-bottom: -25px;
+        margin-top: 130px;
         justify-content: bottom;
     }
 }
