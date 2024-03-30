@@ -337,7 +337,7 @@ main h2 {
 
 /* LOCALIZAÇÃO FAIXA AZUL  */
 #null {
-    background-color:  #e97320;
+    background: linear-gradient(to bottom left, chocolate, orange, gold);
     text-shadow: 1px 1px 0px black;
     font-family: 'Geosanslight', 'sans serif';
     padding: 10px 10px;
@@ -362,7 +362,7 @@ main h2 {
 }
 .map {
     background-color: #fff;
-    box-shadow: 3px 2px 10px rgba(41, 125, 148, 0.6);
+    box-shadow: 3px 2px 10px orange;
     text-align: center;
     justify-content: center;
 }
@@ -691,16 +691,6 @@ footer {
         width: 50vh;
         height: 50vh;
     }
-    .h1 {
-        position: static;
-        height: 140px;
-        width: 390px;
-    }
-    .h2{
-        position: static;
-        height: 100px;
-        width: 390px;
-    }
     .destaqueSobre {
         color: #000000;
         font-family: "GeosansLight", sans-serif;
@@ -713,8 +703,11 @@ footer {
         font-family: "GeosansLight", sans-serif;
         padding: 100px;
         text-align: center;
-        height: 300px;
+        height: 550px;
         font-size: 1.5em;
+    }
+    #Cursos, h2{
+        font-size: 1em;
     }
     .textoSobre {
         color: #000;
@@ -740,8 +733,9 @@ footer {
         font-size: 1.6em;
     }
     /* LOCALIZAÇÃO DOS MAPAS */
-    #local {
+    #LOCAL {
         display: flex;
+        background-color: #000;
     }
 
     .localy {
@@ -753,7 +747,10 @@ footer {
     }
     .map {
         background-color: #fff;
-        box-shadow: 3px 2px 10px #f6ff00;
+        margin-top: 15px;
+        margin-bottom: -45x;
+        border-radius: 80px;
+        box-shadow: 20px 20px 100px linear-gradient(to top left, gold, orange, chocolate);
         text-align: center;
     }
     /* CONTATOS */
@@ -763,8 +760,11 @@ footer {
         justify-content: space-between;
         width: 96.8%;
         margin-left: -30px;
-        padding: 50px;
+        padding-left: 50px;
+        padding-right: 50px;
+        padding-top: 0px;
     }
+
     .contact {
         display: flex;
         flex-direction: column;
@@ -793,6 +793,12 @@ footer {
     .linebot {
         margin-left: -30px; 
         width: 197.9vh;
+        height: 3px;
+        background: linear-gradient(to top left, gold, orange, chocolate);
+    }
+    .linebot2 {
+        margin-left: -30px;
+        width: 200.5vh;
         height: 3px;
         background: linear-gradient(to top left, gold, orange, chocolate);
     }
