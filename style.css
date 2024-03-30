@@ -725,6 +725,9 @@ footer {
         margin-left: 803px;
         margin-bottom: 50px;
     }
+    #Inscrever:hover {
+        color: #000;
+    }
     .textoSobre {
         color: #000;
         font-family: "GeosansLight", sans-serif;
