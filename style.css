@@ -169,300 +169,376 @@ body {
 
 /* Smartphone Portrait */
 
+    html {
+        max-width: 430px;
+    }
+        /* Destaque */
+        main h1, main h2 {
+            text-shadow: #343538 0.05em 0.05em 0.05em;
+        }
+        .h1 {
+            position: static;
+            margin-bottom: 10px;
+            height: 90px;
+            width: 300px;
+        }
+        .h2{
+            position: static;
+            margin-bottom: 100px;
+            height: 90px;
+            width: 300px;
+        }
+
+
+    /* Cabeçalho */
+    header {
+        justify-content: space-between;
+        background-color: #000000;
+        opacity: 0.99;
+        height: 50px;
+    }
+    #logo img {
+        margin-top: -8px;
+        margin-left: -7px;
+        width: 100px;
+        height: 100px;
+    }
+    #check {
+        display: none;
+    }
+    label {
+        font-size: 3em;
+        position: fixed;
+        padding-right: 15px;
+        top: -10px;
+        right: 15px;
+        color: rgba(255, 255, 255, 1);
+    }
+    /* nav {
+        display: flex;
+        justify-content: flex-end;
+        position: fixed;
+        height: 100vh;
+        width: 100px;
+        top: 60px;
+        right: -100%;
+        align-items: center;
+        background-color: black;
+    } */
+    nav ul {
+        list-style: none;
+        background-color: black;
+        position: fixed;
+        height: 30vh;
+        top: 30px;
+        right: -300px;
+        width: 300px;
+        transition: all 0.5s;
+    }
+    nav a {
+        text-decoration: none;
+        color: white;
+        margin: 5px;
+        transition: color 0.3s;
+    }
+    #check:checked ~ul {
+        right: -30px;
+    }
+    nav ul li {
+        padding: 20px;
+        border-bottom: 1px solid #000000;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: white;
+    }
     /* Destaque */
-    main h1, main h2 {
-        text-shadow: #343538 0.05em 0.05em 0.05em;
+    .line {
+        top: 20px;
+        width: 100%;
+        height: 6.5px;
+        background: linear-gradient(to top left, gold, orange, chocolate);
     }
-    .h1 {
-        position: static;
-        margin-bottom: 10px;
+    main {
+        margin-top: 0px;
+        height: 310px;
+        background-color: #000000;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        text-align: center;
+    }
+    #logobg {
+        top: -50px;
+        width: 250px;
+        height: 250px;
+        margin-top: -70px;
+    }
+    /* slider */ 
+    .hero-slider {
+        height: 46vh;
+    }
+    .hero-slider .carousel-cell .info-container .text {
+        margin-top: 25px;
+        font-size: 23px;
+    }
+    /* Sobre */
+
+    #Sobre {
+        /* background-image: url(img/logonf.png); */
+        /* background-position-x: center;
+        background-size: cover; */
+        padding: 10px;
+        max-width: 430px;
+        text-align: center;
+        justify-content: center;
+    }
+    #Sobre h1 {
+        font-size: 2em;
+    }
+    #Sobre h2 {
+        font-size: 1.5em;
+    }
+    #Sobre h3 {
+        text-shadow: 1px 2px black;
+        color:  #ffa600;
+        font-size: 1em;
+        margin-left: 3px;
+    }
+    .foto {
+        background-image: url(img/logob.png);
+        background-size: 45vh;
+        margin-top: 10px;
+        margin-left: -100px;
+        height: 350px;
+        width: 380px;
+        position: relative;
+        left: -360px; /* Começa fora da tela à esquerda */
+        transition: transform 1s ease, left 1s ease
+    }
+    .foto1 {
+        background-image: url(img/CAPA.jpg);
+        background-size: 50vh;
+        margin-top: 10px;
+        margin-left: 100px;
+        height: 550px;
+        width: 380px;
+        position: relative;
+        left: -360px; /* Começa fora da tela à esquerda */
+        transition: transform 1s ease, left 1s ease
+    }
+    #Cursos {
+        padding: 10px;
+        max-width: 430px;
+    }
+    .foto2 {
+        background-image: url(img/CAPA.jpg);
+        background-size: 350px 450px;
+        margin-top: 50px;
+        margin-left: 100px;
+        height: 450px;
+        width: 350px;
+        border-radius: 35px;
+        box-shadow: 2px 3px 20px black;
+        position: relative;
+        left: -360px; /* Começa fora da tela à esquerda */
+        transition: transform 1s ease, left 1s ease
+    }
+    .destaqueSobre {
+        font-family: 'Augustus', 'sans serif';
+        color: #022031;
+        /* text-shadow: 1px 1px 3px black; */
+    } 
+    .textoSobre {
+        /* text-shadow: 1px 1px 3px #000000; */
+        margin-top: -65px;
+        color: #022031;
+        padding: 10px 10px 10px 10px;
+        text-align: center;
+        justify-content: center;
+    } 
+    .linemid {
+        max-width: 430px;
+        width: 200.5vh;
+        height: 5px;
+        background: linear-gradient(to top left, gold, orange, chocolate);
+    }
+    .destaqueSobre1 {
+        font-family: 'Geosanslight', 'sans serif';
+        font-size: 1em;
+        text-align: center;
+        justify-content: center;
+    }
+    .textoSobre1 {
+        font-family: 'Geosanslight', 'sans serif';
+        font-size: 20px;
+        text-align: center;
+        justify-content: center;
+    }
+    #Inscrever {
+        font-family: "Montserrat", sans-serif;
+        background: linear-gradient(to top left, gold, orange, rgb(255, 106, 0));
+        color: #fff;
+        padding: 10px 20px;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 1px 1px 5px #000;
+        font-size: 20px;
+        cursor: pointer;
+        margin: 0px 20px 20px 115px;
+    }
+    /* LOCALIZAÇÃO FAIXA AZUL  */
+    #null {
+        background: linear-gradient(to bottom left, chocolate, orange, gold);
+        text-shadow: 3px 3px 10px rgb(0, 0, 0);
+        font-family: 'Geosanslight', 'sans serif';
+        padding: 10px 10px;
+        color: rgb(255, 255, 255);
+        width: cover;
         height: 90px;
-        width: 300px;
+        text-align: center;
+        justify-content: center;
     }
-    .h2{
-        position: static;
-        margin-bottom: 100px;
-        height: 90px;
-        width: 300px;
+    #null h2 {
+        font-size: 2em;
+    }
+    #null h3 {
+        font-size: 1.5em;
+    }
+    /* MAPAS */
+    #local {
+        display: flex;
     }
 
-
-/* Cabeçalho */
-header {
-    justify-content: space-between;
-    background-color: #000000;
-    opacity: 0.99;
-    height: 70px;
-}
-#logo img {
-    margin-top: 100px;
-    margin-left: -35px;
-    width: 50px;
-    height: 50px;
-}
-#check {
-    display: none;
-}
-label {
-    font-size: 3em;
-    position: fixed;
-    padding-right: 15px;
-    top: 0px;
-    right: 10px;
-    color: rgba(255, 255, 255, 1);
-}
-/* nav {
-    display: flex;
-    justify-content: flex-end;
-    position: fixed;
-    height: 100vh;
-    width: 100px;
-    top: 60px;
-    right: -100%;
-    align-items: center;
-    background-color: black;
-} */
-nav ul {
-    list-style: none;
-    background-color: black;
-    position: fixed;
-    height: 60vh;
-    top: 30px;
-    right: -100%;
-    width: 240px;
-    transition: all 0.5s;
-}
-nav a {
-    text-decoration: none;
-    color: white;
-    margin: 5px;
-    transition: color 0.3s;
-}
-#check:checked ~ul {
-    right: 0;
-}
-nav ul li {
-    padding: 20px;
-    border-bottom: 1px solid #000000;
-}
-nav ul li a {
-    text-decoration: none;
-    color: white;
-}
-/* Destaque */
-.line {
-    top: 20px;
-    width: 100%;
-    height: 3px;
-    background: linear-gradient(to top left, gold, orange, chocolate);
-}
-main {
-    margin-top: 150px;
-    height: 100%;
-    background-color: #000000;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-}
-main img {
-    width: 360px;
-    height: 220px;
-    margin-top: 100px;
-}
-main h1 {
-    font-size: 4em;
-}
-
-main h2 {
-    font-size: 2em;
-}
-/* Sobre */
-
-#Sobre {
-    /* background-image: url(img/logonf.png); */
-    /* background-position-x: center;
-    background-size: cover; */
-    padding: 30px 0px;
-    text-align: center;
-    justify-content: center;
-}
-#Sobre h1 {
-    font-size: 2em;
-}
-#Sobre h2 {
-    font-size: 1.5em;
-}
-#Sobre h3 {
-    text-shadow: 1px 2px black;
-    color:  #ffa600;
-    font-size: 1em;
-    margin-left: 3px;
-}
-.foto {
-    background-image: url(img/logob.png);
-    background-size: 50vh;
-    margin-top: 10px;
-    margin-left: -100px;
-    height: 550px;
-    width: 380px;
-    position: relative;
-    left: -360px; /* Começa fora da tela à esquerda */
-    transition: transform 1s ease, left 1s ease
-}
-.foto1 {
-    background-image: url(img/CAPA.jpg);
-    background-size: 50vh;
-    margin-top: 10px;
-    margin-left: 100px;
-    height: 550px;
-    width: 380px;
-    position: relative;
-    left: -360px; /* Começa fora da tela à esquerda */
-    transition: transform 1s ease, left 1s ease
-}
-.destaqueSobre {
-    font-family: 'Augustus', 'sans serif';
-    color: #022031;
-    /* text-shadow: 1px 1px 3px black; */
-} 
- .textoSobre {
-    /* text-shadow: 1px 1px 3px #000000; */
-
-    color: #022031;
-    padding: 10px 10px 10px 10px;
-    text-align: center;
-    justify-content: center;
-} 
-
-/* LOCALIZAÇÃO FAIXA AZUL  */
-#null {
-    background: linear-gradient(to bottom left, chocolate, orange, gold);
-    text-shadow: 1px 1px 0px black;
-    font-family: 'Geosanslight', 'sans serif';
-    padding: 10px 10px;
-    color: rgb(255, 255, 255);
-    width: cover;
-    height: 95px;
-    text-align: center;
-    justify-content: center;
-}
-#null h2 {
-    font-size: 2em;
-}
-/* MAPAS */
-#local {
-    display: flex;
-}
-
-.localy {
-    display: flex;
-    margin: 0 auto;
-    justify-content: center;
-}
-.map {
-    background-color: #fff;
-    box-shadow: 3px 2px 10px orange;
-    text-align: center;
-    justify-content: center;
-}
-/* CONTATO REAL */
-#Contato1 {
-    height: 150px;
-    margin-top: 0px;
-    background-color: #000000;
-    text-align: center;
-}
-
-.textoContato {
-    margin-top: 10px;
-    text-align: center;
-    font-size: small;
-    color: white;
-    text-shadow: 1px 1px 2px #000000;
-    justify-content: center;
-}
-.textoContato a {
-    text-decoration: none;
-    color: white;
-}
-.textoContato1 {
-    text-align: center;
-    font-size: small;
-    color: white;
-    text-shadow: 1px 1px 2px #000000;
-    justify-content: space-between;
-}
-/* CONTATO */
-#Contato {
-    width: cover;
-    padding: 10px;
-    background-color: #000000;
-}
-.textoContato a {
-    /* Define o estilo padrão do texto */
-    color: rgb(255, 255, 255); /* Cor do texto */
-    text-decoration: none; /* Remove o sublinhado padrão dos links */
-    position: relative; /* Define a posição como relativa para que a sombra possa ser posicionada */
-}
-
-.textoContato a:hover {
-    /* Define o estilo do texto quando destacado */
-    animation: gradientText 2s infinite alternate; /* Aplica a animação de gradiente */
-}
-
-@keyframes gradientText {
-    0% {
-        color: rgb(255, 255, 255); /* Cor inicial do texto */
-        text-shadow: 0 0 2px rgb(252, 244, 200), 0 0 5px rgb(246, 209, 140), 0 0 10px rgb(211, 132, 75); /* Sombra de texto com efeito degradê */
+    .localy {
+        display: flex;
+        margin: 0 auto;
+        justify-content: center;
     }
-    50% {
-        color: gold; /* Cor inicial do texto */
-        text-shadow: 0 0 5px gold, 0 0 10px orange, 0 0 20px chocolate; /* Sombra de texto com efeito degradê */
+    .map {
+        background-color: #000000;
+        color: white;
+git */
+        text-align: center;
+        justify-content: center;
     }
-    100% {
-        color: orange; /* Cor final do texto */
-        text-shadow: 0 0 10px chocolate, 0 0 20px orange, 0 0 30px gold; /* Sombra de texto com efeito degradê */
+    .mapframe {
+        max-width: 430px;
+        width: 500px;
     }
-}
-.Flex2 {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: center;
-}
-.Flex4 {
-    display: flex;
-    padding: 5px;
-    flex-direction: row;
-    justify-content: center;
-}
-.Flexzin {
-    display: flex;
-    padding: 10px;
-    flex-direction: column;
-    justify-content: center;
-}
-/* FOOTER */
+    .linebot {
+        max-width: 460px;
+        margin-top: 100px;
+        margin-left: -30px; 
+        width: 197.9vh;
+        height: 3px;
+        background: linear-gradient(to top left, gold, orange, chocolate);
+    }
+    .linebot2 {
+        margin-top: -40px;
+        margin-left: -30px;
+        max-width: 460px;
+        width: 200.5vh;
+        height: 3px;
+        background: linear-gradient(to top left, gold, orange, chocolate);
+    }
+    /* CONTATO REAL */
+    #Contato1 {
+        height: 150px;
+        margin-top: 0px;
+        background-color: #000000;
+        text-align: center;
+    }
 
-footer {
-    left: -10px;
-    position: relative;
-    width: 400px;
-    height: 0 auto;
-    background-color: #000000;
-    padding: 20px;
-}
+    .textoContato {
+        margin-top: 10px;
+        text-align: center;
+        font-size: small;
+        color: white;
+        text-shadow: 1px 1px 2px #000000;
+        justify-content: center;
+    }
+    .textoContato a {
+        text-decoration: none;
+        color: white;
+    }
+    .textoContato1 {
+        text-align: center;
+        font-size: small;
+        color: white;
+        text-shadow: 1px 1px 2px #000000;
+        justify-content: space-between;
+    }
+    /* CONTATO */
+    #Contato {
+        width: cover;
+        padding: 10px;
+        background-color: #000000;
+    }
+    .textoContato a {
+        /* Define o estilo padrão do texto */
+        color: rgb(255, 255, 255); /* Cor do texto */
+        text-decoration: none; /* Remove o sublinhado padrão dos links */
+        position: relative; /* Define a posição como relativa para que a sombra possa ser posicionada */
+    }
 
-#Creditos {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    color: white;
-    text-align: center;
-}
-#Creditos h3 {
-    font-size: small;
-}
+    .textoContato a:hover {
+        /* Define o estilo do texto quando destacado */
+        animation: gradientText 2s infinite alternate; /* Aplica a animação de gradiente */
+    }
+
+    @keyframes gradientText {
+        0% {
+            color: rgb(255, 255, 255); /* Cor inicial do texto */
+            text-shadow: 0 0 2px rgb(252, 244, 200), 0 0 5px rgb(246, 209, 140), 0 0 10px rgb(211, 132, 75); /* Sombra de texto com efeito degradê */
+        }
+        50% {
+            color: gold; /* Cor inicial do texto */
+            text-shadow: 0 0 5px gold, 0 0 10px orange, 0 0 20px chocolate; /* Sombra de texto com efeito degradê */
+        }
+        100% {
+            color: orange; /* Cor final do texto */
+            text-shadow: 0 0 10px chocolate, 0 0 20px orange, 0 0 30px gold; /* Sombra de texto com efeito degradê */
+        }
+    }
+    .Flex2 {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: center;
+    }
+    .Flex4 {
+        display: flex;
+        padding: 5px;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .Flexzin {
+        display: flex;
+        padding: 10px;
+        flex-direction: column;
+        justify-content: center;
+    }
+    /* FOOTER */
+
+    footer {
+        left: -10px;
+        position: relative;
+        width: 400px;
+        height: 0 auto;
+        background-color: #000000;
+        padding: 20px;
+    }
+
+    #Creditos {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        color: white;
+        text-align: center;
+    }
+    #Creditos h3 {
+        font-size: small;
+    }
 /* Smartphone Landscape */
 @media (min-width: 576px) {
     body {
@@ -817,6 +893,11 @@ footer {
     }
     .linebot2 {
         margin-left: -30px;
+        width: 200.5vh;
+        height: 3px;
+        background: linear-gradient(to top left, gold, orange, chocolate);
+    }
+    .linemid {
         width: 200.5vh;
         height: 3px;
         background: linear-gradient(to top left, gold, orange, chocolate);

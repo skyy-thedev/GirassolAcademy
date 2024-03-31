@@ -12,9 +12,18 @@ document.addEventListener('DOMContentLoaded', function () {
     moverFoto: function() {
       var foto = document.getElementById('userpic');
       foto.style.transform = 'translate(15%, 0)';
-      foto.style.left = '15%';
-      foto.style.marginTop = '-10px'
-      foto.style.marginBottom = '15px';
+      foto.style.left = '11%';
+      foto.style.marginTop = '-80px'
+      foto.style.marginBottom = '5px';
+      foto.classList.add('Row');
+      foto.classList.remove('Flex2');
+    },
+    moverFoto2: function() {
+      var foto = document.getElementById('coursepic');
+      foto.style.transform = 'translate(15%, 0)';
+      foto.style.left = '-29.5%';
+      foto.style.marginTop = '35px'
+      foto.style.marginBottom = '35px';
       foto.classList.add('Row');
       foto.classList.remove('Flex2');
     },
@@ -34,6 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
         this.moverFotoDesk();
       } else {
         this.moverFoto();
+        this.moverFoto2();
       }
     }
   };
