@@ -34,8 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
     },    
     moverFotoDesk2: function() {
       var foto = document.getElementById('coursepic');
-      foto.style.transform = 'translate(50%, 0)';
-      foto.style.right = '50%';
+      foto.style.transform = 'translate(52%, 0)';
+      foto.style.right = '52%';
     },
     moverTexto: function() {
       var txtmove = document.getElementById('animatedtxt');
@@ -46,7 +46,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var txtmove = document.getElementById('animatedtxt2');
       txtmove.style.transform = 'translate(-50%, 0)';
       txtmove.style.marginTop = '-25%';
-      txtmove.style.marginLeft = '50%';
+      txtmove.style.marginLeft = '48.7%';
     },
     verificarMediaQuery: function() {
       if (window.matchMedia('(min-width: 1200px)').matches) {

@@ -276,7 +276,12 @@ body {
     }
     /* slider */ 
     .hero-slider {
+        width: 100vw;
         height: 46vh;
+    }
+    .hero-slider .carousel-cell {
+        width: 50vh;
+        height: 50vh;
     }
     .hero-slider .carousel-cell .info-container .text {
         margin-top: 25px;
