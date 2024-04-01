@@ -29,6 +29,11 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     moverFotoDesk: function() {
       var foto = document.getElementById('userpic');
+      foto.style.transform = 'translate(40%, 0)';
+      foto.style.right = '40%';
+    },    
+    moverFotoDesk2: function() {
+      var foto = document.getElementById('coursepic');
       foto.style.transform = 'translate(50%, 0)';
       foto.style.right = '50%';
     },
@@ -37,10 +42,18 @@ document.addEventListener('DOMContentLoaded', function () {
       txtmove.style.transform = 'translate(-10%, 0)';
       txtmove.style.left = '-10%';
     },
+    moverTexto2: function() {
+      var txtmove = document.getElementById('animatedtxt2');
+      txtmove.style.transform = 'translate(-50%, 0)';
+      txtmove.style.marginTop = '-25%';
+      txtmove.style.marginLeft = '50%';
+    },
     verificarMediaQuery: function() {
       if (window.matchMedia('(min-width: 1200px)').matches) {
         this.moverTexto();
+        this.moverTexto2();
         this.moverFotoDesk();
+        this.moverFotoDesk2();
       } else {
         this.moverFoto();
         this.moverFoto2();
