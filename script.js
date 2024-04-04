@@ -27,6 +27,15 @@ document.addEventListener('DOMContentLoaded', function () {
       foto.classList.add('Row');
       foto.classList.remove('Flex2');
     },
+    moverFoto3: function() {
+      var foto = document.getElementById('servicepic');
+      foto.style.transform = 'translate(25%, 0)';
+      foto.style.left = '-24%';
+      foto.style.marginTop = '30px'
+      foto.style.marginBottom = '40px';
+      foto.classList.add('Row');
+      foto.classList.remove('Flex2');
+    },
     moverFotoDesk: function() {
       var foto = document.getElementById('userpic');
       foto.style.transform = 'translate(40%, 0)';
@@ -36,6 +45,11 @@ document.addEventListener('DOMContentLoaded', function () {
       var foto = document.getElementById('coursepic');
       foto.style.transform = 'translate(52%, 0)';
       foto.style.right = '52%';
+    },
+    moverFotoDesk3: function() {
+      var foto = document.getElementById('servicepic');
+      foto.style.transform = 'translate(-70%, 25%)';
+      foto.style.left = '10%';
     },
     moverTexto: function() {
       var txtmove = document.getElementById('animatedtxt');
@@ -48,18 +62,38 @@ document.addEventListener('DOMContentLoaded', function () {
       txtmove.style.marginTop = '-25%';
       txtmove.style.marginLeft = '48.7%';
     },
+    moverTexto3: function() {
+      var txtmove = document.getElementById('animatedtxt3');
+      txtmove.style.transform = 'translate(-15%, 0)';
+      txtmove.style.marginLeft = '0%';
+    },
     verificarMediaQuery: function() {
       if (window.matchMedia('(min-width: 1200px)').matches) {
         this.moverTexto();
         this.moverTexto2();
+        this.moverTexto3();
         this.moverFotoDesk();
         this.moverFotoDesk2();
+        this.moverFotoDesk3();
       } else {
         this.moverFoto();
         this.moverFoto2();
+        this.moverFoto3();
       }
     }
   };
+  // window.addEventListener('load', () => {
+  //   const shine = document.querySelector('#logo img');
+  //   let opacity = 0;
+  
+  //   function animateShine() {
+  //     opacity = opacity === 1 ? 0 : 1;
+  //     shine.style.opacity = opacity;
+  //     setTimeout(animateShine, 500); // Altere este valor para ajustar a velocidade do brilho
+  //   }
+  
+  //   animateShine();
+  // });
   
   // Adiciona um listener para o evento resize para atualizar as animações
   window.addEventListener('resize', function() {
