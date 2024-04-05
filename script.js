@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
     moverFoto2: function() {
       var foto = document.getElementById('coursepic');
       foto.style.transform = 'translate(15%, 0)';
-      foto.style.left = '-29.5%';
+      foto.style.left = '-30%';
       foto.style.marginTop = '35px'
       foto.style.marginBottom = '35px';
       foto.classList.add('Row');
@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     moverFotoDesk3: function() {
       var foto = document.getElementById('servicepic');
-      foto.style.transform = 'translate(-70%, 25%)';
-      foto.style.left = '10%';
+      foto.style.transform = 'translate(-70%, 15%)';
+      foto.style.left = '0%';
     },
     moverTexto: function() {
       var txtmove = document.getElementById('animatedtxt');
@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     moverTexto3: function() {
       var txtmove = document.getElementById('animatedtxt3');
-      txtmove.style.transform = 'translate(-15%, 0)';
+      txtmove.style.transform = 'translate(-15%, -15%)';
       txtmove.style.marginLeft = '0%';
     },
     verificarMediaQuery: function() {
