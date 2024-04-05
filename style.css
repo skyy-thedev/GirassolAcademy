@@ -285,15 +285,15 @@ body {
         height: 50vh;
     }
     .hero-slider .carousel-cell .info-container .text {
-        margin-top: 25px;
-        font-size: 23px;
+        margin-top: 29px;
+        font-size: 21px;
     }
     /* Serviço especializado */ 
     #Servicos {
         max-width: 100vw;
         background-color: black;
         color: white;
-        height: 180vh;
+        height: 210vh;
         padding-top: 50px;
         padding-left: 20px;
         padding-right: 20px;
