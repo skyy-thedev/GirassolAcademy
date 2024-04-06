@@ -20,7 +20,7 @@
 #topo {
     font-family: 'GeosansLight', sans-serif;
     position: fixed;
-    right: 10px;
+    right: 20px;
     bottom: 10px;
 }
 
@@ -210,8 +210,8 @@ body {
         font-size: 3em;
         position: fixed;
         padding-right: 15px;
-        top: -10px;
-        right: 15px;
+        top: -7px;
+        right: 10px;
         color: rgba(255, 255, 255, 1);
     }
     /* nav {
@@ -293,10 +293,8 @@ body {
         max-width: 100vw;
         background-color: black;
         color: white;
-        height: 210vh;
-        padding-top: 50px;
-        padding-left: 20px;
-        padding-right: 20px;
+        height: 200vh;
+        padding: 50px 20px 100px 20px;
         align-items: center;
         text-align: center;
         justify-content: center;
@@ -406,20 +404,85 @@ body {
         border-radius: 12px;
         cursor: pointer;
         transition: all 0.3s ease;
+        filter: drop-shadow(15px 0px 100px gold);
+        animation: animabtn 1.5s linear infinite;
+        opacity: 1;
+    }
+    @keyframes animabtn {
+        0% {
+            transform: scale(1);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.2);
+            opacity: 0;
+        }
     }
     #Cursos {
         padding: 10px;
         max-width: 100vw;
-        max-height: 190vh;
+        max-height: 100%;
+    }
+    #Cursos h2 {
+        color: #ffa600;
+        text-shadow: 1px 0px 0px black;
+    }
+    .infocurso {
+        text-align: center;
+        font-family: 'Geosanslight', sans-serif;
+        font-size: 17px;
+    }
+    .infocurso h2 {
+        font-size: 19px;
+    }
+    #Inscrever2 {
+        box-sizing: border-box;
+        margin-top: 380px;
+        margin-left: 15px;
+        width: 200px;
+        height: 30px;
+        padding: 5px 19px 25px 19px;
+        background: transparent;
+        border: 1px solid #000000;
+        color: #000000;
+        font-family: "Geosanslight", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 18px;
+        letter-spacing: 3px;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+        filter: drop-shadow(15px 0px 100px gold);
+        animation: animabtn 1.5s linear infinite;
+        opacity: 1;
+    }
+    @keyframes animabtn {
+        0% {
+            transform: scale(1);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.2);
+            opacity: 0;
+        }
     }
     .foto2 {
         background-image: url(img/CAPA.jpg);
-        background-size: 350px 450px;
+        background-size: 60vw;
         margin-top: 50px;
-        margin-left: 100px;
-        height: 450px;
-        width: 350px;
-        border-radius: 35px;
+        height: 38.5vh;
+        width: 27vh;
+        border-radius: 30px;
         box-shadow: 2px 3px 20px black;
         position: relative;
         left: -360px; /* Começa fora da tela à esquerda */
@@ -433,6 +496,8 @@ body {
     } 
     .textoSobre {
         /* text-shadow: 1px 1px 3px #000000; */
+        font-family: 'Geosanslight', sans-serif;
+        font-size: 25px;
         max-width: 90vw;
         margin-top: -65px;
         color: #022031;
@@ -442,23 +507,29 @@ body {
     } 
     .linemid {
         max-width: 100vw;
-        width: 200.5vh;
-        height: 5px;
+        width: 100vw;
+        height: 50px;
         background: linear-gradient(to top left, gold, orange, chocolate);
     }
     .destaqueSobre1 {
         max-width: 90vw;
+        margin-top: -50px;
         margin-left: 12px;
         font-family: 'Geosanslight', 'sans serif';
-        font-size: 1em;
+        font-size: 1.2em;
         text-align: center;
         justify-content: center;
     }
+    .destaqueSobre1 h1 {
+        color: white;
+        text-shadow: 1px 0px 0px black;
+    }
     .textoSobre1 {
         max-width: 90vw;
+        margin-top: 110px;
         margin-left: 12px;
         font-family: 'Geosanslight', 'sans serif';
-        font-size: 20px;
+        font-size: 25px;
         text-align: center;
         justify-content: center;
     }
@@ -472,7 +543,7 @@ body {
         box-shadow: 1px 1px 5px #000;
         font-size: 20px;
         cursor: pointer;
-        margin: 0px 20px 20px 105px;
+        margin: -50px 20px 20px 100px;
     }
     /* LOCALIZAÇÃO FAIXA AZUL  */
     #null {
@@ -496,49 +567,58 @@ body {
     /* MAPAS */
     #local {
         display: flex;
+        max-width: 100vw;
     }
 
     .localy {
         display: flex;
-        margin: 0 auto;
+        max-width: 100vw;
         justify-content: center;
     }
     .map {
+        height: 100%;
         background-color: #000000;
         color: white;
         /* box-shadow: 3px 2px 10px orange; */
         text-align: center;
         justify-content: center;
+        max-width: 100vw;
+        width: 500px;
     }
     .mapframe {
-        max-width: 430px;
+        max-width: 100vw;
         width: 500px;
     }
     .linebot {
-        max-width: 460px;
-        margin-top: 100px;
-        margin-left: -30px; 
-        width: 197.9vh;
+        width: 2000px;
+        margin-left: -20px;
+        max-width: 100vw;
+        margin-top: 80px;
         height: 3px;
         background: linear-gradient(to top left, gold, orange, chocolate);
     }
     .linebot2 {
-        margin-top: -40px;
-        margin-left: -30px;
-        max-width: 460px;
-        width: 200.5vh;
+        margin-top: -20px;
+        max-width: 100vw;
+        width: 2000px;
+        margin-left: -20px;
         height: 3px;
         background: linear-gradient(to top left, gold, orange, chocolate);
     }
     /* CONTATO REAL */
     #Contato1 {
+        max-width: 100vw;
         height: 150px;
         margin-top: 0px;
         background-color: #000000;
         text-align: center;
     }
+    .contact {
+        max-width: 100vw;
+    }
 
     .textoContato {
+        max-width: 100vw;
         margin-top: 10px;
         text-align: center;
         font-size: small;
@@ -559,8 +639,7 @@ body {
     }
     /* CONTATO */
     #Contato {
-        width: cover;
-        padding: 10px;
+        max-width: 100vw;
         background-color: #000000;
     }
     .textoContato a {
@@ -609,9 +688,8 @@ body {
     /* FOOTER */
 
     footer {
-        left: -10px;
         position: relative;
-        width: 400px;
+        max-width: 100vw;
         height: 0 auto;
         background-color: #000000;
         padding: 20px;
@@ -723,11 +801,10 @@ body {
 /* Desktop */
 @media (min-width: 1200px) {
     html {
-        margin-right: 150px;
-        max-width: 100vw;
+        max-width: 100%;
     }
     body {
-        max-width: 100vw;
+        max-width: 100%;
         background-color: rgb(255, 255, 255);
     }
     /* Layout */
@@ -738,8 +815,8 @@ body {
     /* Cabeçalho */
     header {
         height: 73px;
-        width: 200vh;
-        opacity: 0.99;
+        width: 100vw;
+        opacity: 1;
     }
     .FlexMenu {
         display: flex;
@@ -794,16 +871,15 @@ body {
     }
     .hero-slider{
         background-color: #000000;
-        margin-top: -100px;
-        padding-left: -10px;
-        width: 100vw;
+        padding: 0 2px 0 1px;
+        width: 99.7vw;
         height: 50vh;
-        overflow: hidden;
+        overflow: clip;
         font-family: 'GeosansLight', sans-serif;
     }
     
     .hero-slider .carousel-cell{
-        width: 70vh;
+        width: 35vw;
         height: 50vh;
         background: no-repeat center/cover;
         display: flex;
@@ -820,16 +896,19 @@ body {
         margin-top: -5px;
         font-size: 35px;
     }
+    .hero-slider .flickity-prev-next-button{
+        margin-left: 10px;  
+        margin-right: 10px;
+    }
     .line {
         top: 20px;
-        width: 200vh;
+        width: 100vw;
         height: 6.5px;
         background: linear-gradient(to top left, gold, orange, chocolate);
     }
      /* Sobre nós */
     #Sobre {
         max-width: 100vw;
-        width: 100vw;
         height: 650px;
         display: flex;
         flex-direction: row;
@@ -863,17 +942,28 @@ body {
     }
     #Cursos {
         max-width: 100vw;
-        min-width: 100vw;
-        height: 1500px;
+        margin-top: -20px;
+        height: 100%;
         text-align: justify;
     }
+    .infocurso {
+        margin-top: -430px;
+        margin-left: -600px;
+        text-align: center;
+        font-family: 'Geosanslight', sans-serif;
+        font-size: 22px;
+    }
+    .infocurso h2 {
+        font-size: 25px;
+    }
     .foto2 {
+        background-size: cover;
         position: relative;
-        margin-top: 50px;
-        margin-left: 50vw;
-        margin-bottom: -75px;
-        height: 45vh;
-        width: 37vh;
+        margin-top: -500px;
+        margin-bottom: 600px;
+        height: 55vh;
+        width: 40vh;
+        cursor: pointer;
         border-radius: 15px 15px 15px 15px;
         transition: transform 1s ease-in-out;
     }
@@ -908,7 +998,7 @@ body {
     main {
         margin-top: 0px;
         height: 40vh;
-        width: 100vw;
+        width: 99.8vw;
         background-color: #000000;
         /* background: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.5)); */
         justify-content: center;
@@ -960,12 +1050,11 @@ body {
             background-position-x: right;
             padding-top: 50px;
             padding-left: -55px;
-            margin-bottom: -100px;
+            padding-bottom: -150px;
             background-color: black;
             color: white;
-            max-height: 110vh;
-            max-width: 97.8vw;
-            min-width: 97.8vw;
+            max-height: 105vh;
+            max-width: 100vw;
             align-items: center;
             text-align: center;
             justify-content: center;
@@ -1051,10 +1140,53 @@ body {
     }
     .destaqueSobre1 {
         font-family: "GeosansLight", sans-serif;
-        padding: 100px;
+        padding: 10px 150px 50px 100px;
         text-align: center;
         height: 550px;
         font-size: 1.5em;
+    }
+    .destaqueSobre1 h2{
+        font-size: 30px;
+    }
+    #Inscrever2 {
+        box-sizing: border-box;
+        margin-top: 570px;
+        margin-left: 100px;
+        width: 200px;
+        height: 30px;
+        padding: 5px 19px 19px 19px;
+        background: transparent;
+        border: 1px solid #000000;
+        color: #000000;
+        font-family: "Geosanslight", sans-serif;
+        font-weight: 200;
+        font-style: normal;
+        font-size: 18px;
+        letter-spacing: 3px;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+    #Inscrever2:hover{
+        background: #fff;
+        color: #000;
+        font-weight: bold;
+        filter: drop-shadow(15px 0px 100px gold);
+        animation: animabtn 1.5s linear infinite;
+        opacity: 1;
+    }
+    @keyframes animabtn {
+        0% {
+            transform: scale(1);
+            opacity: 0;
+        }
+        50% {
+            opacity: 1;
+        }
+        100% {
+            transform: scale(1.2);
+            opacity: 0;
+        }
     }
     #Cursos, h2{
         font-size: 1em;
@@ -1072,7 +1204,7 @@ body {
         font-size: 28px;
         cursor: pointer;
         margin-top: -100px;
-        margin-right: 70px;
+        margin-right: 75px;
         margin-bottom: 50px;
     }
     #Inscrever:hover {
@@ -1092,11 +1224,11 @@ body {
         font-size: 1.8em;
     }
     .textoSobre1 {
-        margin-top: -50px;
-        font-size: 30px;
+        margin-top: 0px;
+        font-size: 33px;
+        width: 80vw;
     }
     #null {
-        min-width: 99vw;
         max-width: 100vw;
     }
     #null h2{
@@ -1107,24 +1239,21 @@ body {
     }
     /* LOCALIZAÇÃO DOS MAPAS */
     #LOCAL {
-        min-width: 100vw;
+        max-width: 100vw;
         height: 600px;
         display: flex;
         background-color: #000;
     }
-
     .localy {
         display: flex;
         flex-direction: row;
         justify-content: center;
         padding-top: 30px;
         padding-bottom: 50px;
-    }
-    .maptitle {
-        margin-left: -30px;
+        margin: 20px 600px 20px 700px;
     }
     .map {
-        width: 450px;
+        width: 100%;
         height: 370px;
         color: #000;
         background-color: #fff;
@@ -1137,14 +1266,9 @@ body {
     /* CONTATOS */
     footer {
         max-width: 100vw;
-        min-width: 96.8vw;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        margin-left: -30px;
-        padding-left: 50px;
-        padding-right: 50px;
-        padding-top: 0px;
     }
 
     .contact {
@@ -1152,7 +1276,6 @@ body {
         flex-direction: column;
         justify-items: center;
         justify-content: center;
-        margin-right: -20px;
         margin-bottom: 20px;
     }
     #Contato1 {
@@ -1172,38 +1295,30 @@ body {
         color: white;
         justify-content: center;
     }   
-    .textoContato #telefone ,#email{
+    .textoContato #telefone #email{
         margin-bottom: 10px;
-        margin-left: 30px;
     }   
     .linebot {
-        margin-left: -35px; 
-        min-width: 100vw;
-        width: 100vw;
+        margin-left: -45px;
+        max-width: 100vw;
         height: 3px;
         background: linear-gradient(to top left, gold, orange, chocolate);
     }
     .linebot2 {
+        margin-left: -45px;
         margin-top: -150px;
-        margin-left: -30px;
-        min-width: 100vw;
-        width: 100vw;
+        max-width: 100vw;
         height: 3px;
         background: linear-gradient(to top left, gold, orange, chocolate);
     }
     .linemid {
-        width: 100vw;
-        min-width: 100vw;
-        height: 3px;
+        max-width: 100vw;
+        height: 50px;
         background: linear-gradient(to top left, gold, orange, chocolate);
     }
     #Creditos {
-        max-width: 97vw;
-        width: 100vw;
+        max-width: 100vw;
         margin-top: 100px;
         justify-content: bottom;
-    }
-    #Creditos, h3 {
-        margin-left: 25px;
     }
 }

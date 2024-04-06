@@ -12,16 +12,16 @@ document.addEventListener('DOMContentLoaded', function () {
     moverFoto: function() {
       var foto = document.getElementById('userpic');
       foto.style.transform = 'translate(15%, 0)';
-      foto.style.left = '11%';
-      foto.style.marginTop = '-80px'
-      foto.style.marginBottom = '5px';
+      foto.style.left = '12%';
+      foto.style.marginTop = '-40px'
+      foto.style.marginBottom = '-10px';
       foto.classList.add('Row');
       foto.classList.remove('Flex2');
     },
     moverFoto2: function() {
       var foto = document.getElementById('coursepic');
-      foto.style.transform = 'translate(15%, 0)';
-      foto.style.left = '-30%';
+      foto.style.transform = 'translate(50%, 0)';
+      foto.style.left = '-12%';
       foto.style.marginTop = '35px'
       foto.style.marginBottom = '35px';
       foto.classList.add('Row');
@@ -44,7 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     moverFotoDesk2: function() {
       var foto = document.getElementById('coursepic');
       foto.style.transform = 'translate(52%, 0)';
-      foto.style.right = '52%';
+      foto.style.left = '45%';
     },
     moverFotoDesk3: function() {
       var foto = document.getElementById('servicepic');
