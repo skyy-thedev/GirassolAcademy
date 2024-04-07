@@ -170,7 +170,7 @@ body {
 /* Smartphone Portrait */
 
     html {
-        max-width: 430px;
+        max-width: 100vw;
     }
         /* Destaque */
         main h1, main h2 {
@@ -293,7 +293,7 @@ body {
         max-width: 100vw;
         background-color: black;
         color: white;
-        height: 200vh;
+        height: 90%;
         padding: 50px 20px 100px 20px;
         align-items: center;
         text-align: center;
@@ -422,7 +422,6 @@ body {
         }
     }
     #Cursos {
-        padding: 10px;
         max-width: 100vw;
         max-height: 100%;
     }
@@ -508,12 +507,12 @@ body {
     .linemid {
         max-width: 100vw;
         width: 100vw;
-        height: 50px;
+        height: 5px;
         background: linear-gradient(to top left, gold, orange, chocolate);
     }
     .destaqueSobre1 {
         max-width: 90vw;
-        margin-top: -50px;
+        margin-top: 50px;
         margin-left: 12px;
         font-family: 'Geosanslight', 'sans serif';
         font-size: 1.2em;
@@ -521,8 +520,8 @@ body {
         justify-content: center;
     }
     .destaqueSobre1 h1 {
-        color: white;
-        text-shadow: 1px 0px 0px black;
+        color: rgb(5, 5, 5);
+        text-shadow: 1px 0px 0px rgb(252, 252, 252);
     }
     .textoSobre1 {
         max-width: 90vw;
@@ -1048,9 +1047,9 @@ body {
             background-size: 150vh;
             background-repeat: no-repeat;
             background-position-x: right;
-            padding-top: 0px;
+            padding-top: 50px;
             padding-left: -55px;
-            padding-bottom: -150px;
+            padding-bottom: 50px;
             background-color: black;
             color: white;
             max-height: 105vh;
@@ -1074,7 +1073,7 @@ body {
             background: linear-gradient(to top left, gold, orange, chocolate);
         }
         .destaqueSobre3 {
-            margin-top: 185px;
+            margin-top: 300px;
             margin-left: 800px;
             width: 60vh;
             font-family: 'Geosanslight', 'sans serif';
