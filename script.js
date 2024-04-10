@@ -43,12 +43,12 @@ document.addEventListener('DOMContentLoaded', function () {
     },    
     moverFotoDesk2: function() {
       var foto = document.getElementById('coursepic');
-      foto.style.transform = 'translate(52%, 0)';
-      foto.style.left = '45%';
+      foto.style.transform = 'translate(60%, 0)';
+      foto.style.left = '50%';
     },
     moverFotoDesk3: function() {
       var foto = document.getElementById('servicepic');
-      foto.style.transform = 'translate(-70%, 15%)';
+      foto.style.transform = 'translate(-50%, 35%)';
       foto.style.left = '0%';
     },
     moverTexto: function() {
