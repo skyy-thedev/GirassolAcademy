@@ -11,17 +11,17 @@ document.addEventListener('DOMContentLoaded', function () {
   var animacoes = {
     moverFoto: function() {
       var foto = document.getElementById('userpic');
-      foto.style.transform = 'translate(15%, 0)';
-      foto.style.left = '12%';
+      foto.style.transform = 'translate(20%, 0)';
+      foto.style.left = '-23%';
       foto.style.marginTop = '-40px'
-      foto.style.marginBottom = '-10px';
+      foto.style.marginBottom = '-50px';
       foto.classList.add('Row');
       foto.classList.remove('Flex2');
     },
     moverFoto2: function() {
       var foto = document.getElementById('coursepic');
       foto.style.transform = 'translate(50%, 0)';
-      foto.style.left = '-12%';
+      foto.style.left = '-28%';
       foto.style.marginTop = '35px'
       foto.style.marginBottom = '35px';
       foto.classList.add('Row');
@@ -29,10 +29,9 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     moverFoto3: function() {
       var foto = document.getElementById('servicepic');
-      foto.style.transform = 'translate(25%, 0)';
+      foto.style.transform = 'translate(25%, 10%)';
       foto.style.left = '-24%';
-      foto.style.marginTop = '30px'
-      foto.style.marginBottom = '40px';
+      foto.style.marginBottom = '-450px'
       foto.classList.add('Row');
       foto.classList.remove('Flex2');
     },
@@ -44,7 +43,7 @@ document.addEventListener('DOMContentLoaded', function () {
     moverFotoDesk2: function() {
       var foto = document.getElementById('coursepic');
       foto.style.transform = 'translate(60%, 0)';
-      foto.style.left = '50%';
+      foto.style.left = '10%';
     },
     moverFotoDesk3: function() {
       var foto = document.getElementById('servicepic');
@@ -60,7 +59,7 @@ document.addEventListener('DOMContentLoaded', function () {
       var txtmove = document.getElementById('animatedtxt2');
       txtmove.style.transform = 'translate(-50%, 0)';
       txtmove.style.marginTop = '-25%';
-      txtmove.style.marginLeft = '48.7%';
+      txtmove.style.marginLeft = '35%';
     },
     moverTexto3: function() {
       var txtmove = document.getElementById('animatedtxt3');
