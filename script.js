@@ -8,6 +8,14 @@ document.addEventListener('DOMContentLoaded', function () {
     });
   });
   
+  function importHotmart(){ 
+    var imported = document.createElement('script'); 
+    imported.src = 'https://static.hotmart.com/checkout/widget.min.js'; 
+    document.head.appendChild(imported); 
+   var link = document.createElement('link'); 
+   document.head.appendChild(link);	} 
+  importHotmart(); 
+
   var animacoes = {
     moverFoto: function() {
       var foto = document.getElementById('userpic');
