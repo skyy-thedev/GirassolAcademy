@@ -21,8 +21,8 @@ document.addEventListener('DOMContentLoaded', function () {
       var foto = document.getElementById('userpic');
       foto.style.transform = 'translate(20%, 0)';
       foto.style.left = '-23%';
-      foto.style.marginTop = '-40px'
-      foto.style.marginBottom = '-50px';
+      foto.style.marginTop = '40px'
+      foto.style.marginBottom = '10px';
       foto.classList.add('Row');
       foto.classList.remove('Flex2');
     },
@@ -30,8 +30,8 @@ document.addEventListener('DOMContentLoaded', function () {
       var foto = document.getElementById('coursepic');
       foto.style.transform = 'translate(50%, 0)';
       foto.style.left = '-28%';
-      foto.style.marginTop = '35px'
-      foto.style.marginBottom = '35px';
+      foto.style.marginTop = '50px'
+      foto.style.marginBottom = '70px';
       foto.classList.add('Row');
       foto.classList.remove('Flex2');
     },
