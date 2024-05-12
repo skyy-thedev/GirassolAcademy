@@ -544,6 +544,14 @@ body {
         cursor: pointer;
         margin: 0px 20px 20px 65px;
     }
+    .presso {
+        margin-top: -20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .presso h1 {
+        font-size: 2em;
+    }
     /* LOCALIZAÇÃO FAIXA AZUL  */
     #null {
         max-width: 100vw;
@@ -1225,6 +1233,14 @@ body {
     }
     #null h3{
         font-size: 1.6em;
+    }
+    .presso {
+        margin-top: -20px;
+        text-align: center;
+        margin-bottom: 50px;
+    }
+    .presso h1 {
+        font-size: 2em;
     }
     /* LOCALIZAÇÃO DOS MAPAS */
     #LOCAL {
