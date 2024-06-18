@@ -1096,6 +1096,7 @@ body {
         margin-left: 35px;
         font-size: 33px;
         width: 80vw;
+        max-width: 100%;
     }
     /* #container {
         position: relative;

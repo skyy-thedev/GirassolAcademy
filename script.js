@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     moverTexto4: function() {
       var txtmove = document.getElementById('animatedtxt4');
-      txtmove.style.transform = 'translate( 7%, -20%)';
+      txtmove.style.transform = 'translate( 0%, -20%)';
       txtmove.style.marginLeft = '0%';
     },
     verificarMediaQuery: function() {
