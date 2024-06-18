@@ -1092,8 +1092,8 @@ body {
     .textoSobre2 {
         text-align: center;
         font-family: "GeosansLight", sans-serif;
-        margin-top: -150px;
-        margin-left: 35px;
+        margin-top: -170px;
+        margin-left: 175px;
         font-size: 33px;
         width: 80vw;
         max-width: 100%;
@@ -1338,7 +1338,7 @@ body {
         font-size: 28px;
         cursor: pointer;
         margin-top: -100px;
-        margin-left: -230px;
+        margin-left: 50px;
         margin-bottom: -200px;
     }
     #Inscrever3:hover {
