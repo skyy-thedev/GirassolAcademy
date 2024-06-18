@@ -43,6 +43,14 @@ document.addEventListener('DOMContentLoaded', function () {
       foto.classList.add('Row');
       foto.classList.remove('Flex2');
     },
+    moverFoto4: function() {
+      var foto = document.getElementById('coursepic2');
+      foto.style.transform = 'translate(50%, 10%)';
+      foto.style.marginTop = '50px'
+      foto.style.marginBottom = '70px';
+      foto.classList.add('Row');
+      foto.classList.remove('Flex2');
+    },
     moverFotoDesk: function() {
       var foto = document.getElementById('userpic');
       foto.style.transform = 'translate(40%, 0)';
@@ -50,7 +58,7 @@ document.addEventListener('DOMContentLoaded', function () {
     },    
     moverFotoDesk2: function() {
       var foto = document.getElementById('coursepic');
-      foto.style.transform = 'translate(60%, 0)';
+      foto.style.transform = 'translate(60%, -15%)';
       foto.style.left = '10%';
     },
     moverFotoDesk3: function() {
@@ -58,9 +66,14 @@ document.addEventListener('DOMContentLoaded', function () {
       foto.style.transform = 'translate(-50%, 35%)';
       foto.style.left = '0%';
     },
+    moverFotoDesk4: function() {
+      var foto = document.getElementById('coursepic2');
+      foto.style.transform = 'translate(80%, -10%)';
+      foto.style.left = '0%';
+    },
     moverTexto: function() {
       var txtmove = document.getElementById('animatedtxt');
-      txtmove.style.transform = 'translate(-10%, 0)';
+      txtmove.style.transform = 'translate(-10%, -100%)';
       txtmove.style.left = '-10%';
     },
     moverTexto2: function() {
@@ -74,14 +87,21 @@ document.addEventListener('DOMContentLoaded', function () {
       txtmove.style.transform = 'translate(-15%, -15%)';
       txtmove.style.marginLeft = '0%';
     },
+    moverTexto4: function() {
+      var txtmove = document.getElementById('animatedtxt4');
+      txtmove.style.transform = 'translate( 7%, -20%)';
+      txtmove.style.marginLeft = '0%';
+    },
     verificarMediaQuery: function() {
       if (window.matchMedia('(min-width: 1200px)').matches) {
         this.moverTexto();
         this.moverTexto2();
         this.moverTexto3();
+        this.moverTexto4();
         this.moverFotoDesk();
         this.moverFotoDesk2();
         this.moverFotoDesk3();
+        this.moverFotoDesk4();
       } else {
         this.moverFoto();
         this.moverFoto2();
