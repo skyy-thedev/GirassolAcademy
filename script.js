@@ -53,23 +53,24 @@ document.addEventListener('DOMContentLoaded', function () {
     },
     moverFotoDesk: function() {
       var foto = document.getElementById('userpic');
-      foto.style.transform = 'translate(40%, 0)';
-      foto.style.right = '40%';
+      foto.style.transform = 'translate(10%, 0)';
+      foto.style.right = '0%';
     },    
     moverFotoDesk2: function() {
       var foto = document.getElementById('coursepic');
-      foto.style.transform = 'translate(60%, -15%)';
-      foto.style.left = '10%';
+      foto.style.transform = 'translate(130%, -115%)';
+      foto.style.left = '0%';
     },
     moverFotoDesk3: function() {
       var foto = document.getElementById('servicepic');
-      foto.style.transform = 'translate(-50%, 35%)';
-      foto.style.left = '0%';
+      foto.style.transform = 'translate(0%, 30%)';
+      foto.style.left = '40%';
     },
     moverFotoDesk4: function() {
       var foto = document.getElementById('coursepic2');
-      foto.style.transform = 'translate(80%, -10%)';
+      foto.style.transform = 'translate(150%, -120%)';
       foto.style.left = '0%';
+      foto.style.marginBottom = '-250px'
     },
     moverTexto: function() {
       var txtmove = document.getElementById('animatedtxt');

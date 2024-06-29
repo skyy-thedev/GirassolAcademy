@@ -824,9 +824,39 @@ body {
         margin-top: -10px;
         height: cover;
     }
+    #userpic {
+        background-size: cover;
+    }
+    #coursepic {
+        background-size: cover;
+        margin: 10px 0px 0px 320px;
+    }
+    #Inscrever2 {
+        margin-top: 450px;
+        margin-left: 35px;
+    }
+    #Inscrever {
+        margin-left: 235px;
+        margin-bottom: 50px;
+        margin-top: -100px;
+    }
+    #coursepic2 {
+        background-size: cover;
+        margin: 10px 0px 0px 240px;
+    }
+    #Inscrever3 {
+        margin-left: 275px;
+        margin-bottom: 50px;
+        margin-top: -100px;
+    }
+    #botaoservico {
+        margin-top: 750px;
+    }
+    .localy {
+        background-color: #000;
+    }
         /* CONTATOS */
         .textoContato {
-            padding-top: 100px;
             text-align: center;
             font-size: small;
             color: white;
@@ -863,9 +893,42 @@ body {
         margin-top: -10px;
         height: 50vh;
     }
+    #Servicos {
+        height: 1000px;
+    }
+    #botaoservico {
+        margin-top: 450px;
+    }
+    .foto3 {
+        background-size: cover;
+        width: 50vh;
+        height: 50vh;
+        margin-left: 450px;
+    }
+    #userpic {
+        margin-left: 460px;
+    }
+    #coursepic {
+        margin-left: 590px;
+    }
+    #Inscrever2 {
+        margin-top: 350px;
+        margin-left: 0px;
+    }
+    #Inscrever {
+        margin-left: 365px;
+        margin-bottom: 50px;
+    }
+    #coursepic2 {
+        margin-left: 410px;
+    }
+    #Inscrever3 {
+        margin-left: 405px;
+        margin-bottom: 50px;
+        margin-top: -100px;
+    }
         /* CONTATOS */
         .textoContato {
-            padding-top: 100px;
             text-align: center;
             font-size: small;
             color: white;
@@ -932,10 +995,13 @@ body {
     nav ul li a {
         text-decoration: none;
         color: white;
-        transition: color 0.3s;
+        display: inline-block;
+        transform: 1s ease;
+        transition: 0.8s all;
     }
     nav ul li a:hover {
         color: #f6ff00;
+        transform: translateY(-5px);
     }
     #logo img {
         margin-top: -15px;
@@ -1156,11 +1222,11 @@ body {
         /* Serviço especializado */ 
         .foto3 {
             display: flex;
-            position: relative;
-            background-size: 100%;
-            width: 60%;
-            height: 60%;
-            left: 50px;
+            position: absolute;
+            background-size: cover;
+            width: 45vh;
+            height: 45vh;
+            left: 0px;
         }   
         #Servicos {
             background-image: url(img/alicatebg.png);
@@ -1209,7 +1275,7 @@ body {
         }
         #botaoservico {
             box-sizing: border-box;
-            margin-top: 400px;
+            margin-top: 460px;
             margin-left: 15px;
             width: 130px;
             height: 20px;
@@ -1323,9 +1389,13 @@ body {
         margin-top: -100px;
         margin-left: 600px;
         margin-bottom: 50px;
+        display: inline-block;
+        transform: 1s ease;
+        transition: 0.5s all;
     }
     #Inscrever:hover {
         color: #000;
+        transform: translateY(-7px);
     }
     #Inscrever3 {
         font-family: "Montserrat", sans-serif;
@@ -1340,9 +1410,13 @@ body {
         margin-top: -100px;
         margin-left: 50px;
         margin-bottom: -200px;
+        display: inline-block;
+        transform: 1s ease;
+        transition: 0.5s all;
     }
     #Inscrever3:hover {
         color: #000;
+        transform: translateY(-7px);
     }
     .textoSobre {
         color: #000;
@@ -1442,6 +1516,22 @@ body {
         flex-direction: row;
         align-items: center;
         justify-content: space-around;
+    }
+    #facebook {
+        display: inline-block;
+        transform: 1s ease;
+        transition: 0.5s all;
+    }
+    #facebook:hover {
+        transform: translateX(-5px);
+    }
+    #instagram {
+        display: inline-block;
+        transform: 1s ease;
+        transition: 0.5s all;
+    }
+    #instagram:hover {
+        transform: translateX(-5px);
     }
     .textoContato {
         margin-top: -5px;
