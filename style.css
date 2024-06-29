@@ -380,10 +380,13 @@ body {
         height: 38.5vh;
         width: 27vh;
         border-radius: 30px;
-        box-shadow: 2px 3px 20px black;
         position: relative;
         right: 360px; /* Começa fora da tela à esquerda */
-        transition: transform 1s ease, left 1s ease
+        transition: 0.7s all;
+        transform: 1s ease;
+    }
+    .foto2:hover {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.534);
     }
     .foto3 {
         background-image: url(img/afiacao.jpg);
@@ -398,6 +401,7 @@ body {
         flex-direction: column;
         align-items: center;
     }
+    
     .foto4 {
         background-image: url(img/CAPA2.png);
         background-size: 60vw;
@@ -405,10 +409,13 @@ body {
         height: 38.5vh;
         width: 27vh;
         border-radius: 30px;
-        box-shadow: 2px 3px 20px black;
         position: relative;
         right: 0px; /* Começa fora da tela à esquerda */
-        transition: transform 1s ease, left 1s ease
+        transition: 1s all;
+        transform: 0.7s ease;
+    }
+    .foto4:hover {
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.534);
     }
     #botaoservico {
         margin-top: 400px;
@@ -1122,7 +1129,13 @@ body {
         width: 40vh;
         cursor: pointer;
         border-radius: 15px 15px 15px 15px;
-        transition: transform 1s ease-in-out;
+        transition: 0.7s all;
+        transform: 1s ease;
+        display: inline-block;
+    }
+    .foto2:hover {
+        transform: translateY(-25px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.534);
     }
     .infocurso1 {
         margin-top: -390px;
@@ -1143,7 +1156,12 @@ body {
         width: 40vh;
         cursor: pointer;
         border-radius: 15px 15px 15px 15px;
-        transition: transform 1s ease-in-out;
+        transition: 0.5s all;
+        transform: 1s ease;
+    }
+    .foto4:hover {
+        transform: translateY(-100px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.534);
     }
     .destaqueSobre2 {
         font-family: "GeosansLight", sans-serif;
@@ -1396,6 +1414,7 @@ body {
     #Inscrever:hover {
         color: #000;
         transform: translateY(-7px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.534);
     }
     #Inscrever3 {
         font-family: "Montserrat", sans-serif;
@@ -1417,6 +1436,7 @@ body {
     #Inscrever3:hover {
         color: #000;
         transform: translateY(-7px);
+        box-shadow: 0 10px 15px rgba(0, 0, 0, 0.534);
     }
     .textoSobre {
         color: #000;
