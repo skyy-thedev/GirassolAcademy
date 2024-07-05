@@ -7,6 +7,27 @@ document.addEventListener('DOMContentLoaded', function () {
         prevNextButtons: true, // Desabilitar botões de navegação
     });
   });
+
+  document.addEventListener('DOMContentLoaded', function() {
+    const fadeInSections = document.querySelectorAll('.fade-in-section');
+  
+    const options = {
+      threshold: 0.1
+    };
+  
+    const observer = new IntersectionObserver(function(entries, observer) {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, options);
+  
+    fadeInSections.forEach(section => {
+      observer.observe(section);
+    });
+  });
   
   function importHotmart(){ 
     var imported = document.createElement('script'); 
